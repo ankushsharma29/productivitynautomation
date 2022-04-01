@@ -4,6 +4,6 @@
   tasks:
   - include_vars: bucket_vars.yml
   - name: create bucket {{ item.name }} with {{ item.replicas }} replicas
-    shell: /opt/couchbase/bin/couchbase-cli bucket-create -c 127.0.0.1:8091 --bucket={{ item.name }} --bucket-type=couchbase --bucket-ramsize={{ item.ram }} --bucket-replica={{ item.replicas }} --bucket-eviction-policy={{ item.eviction }} -u {{ admin_user }} -p {{ admin_password }}
+    shell: /opt/couchbase/bin/couchbase-cli bucket-create -c 127.0.0.1:8091 --bucket={{ item.name }} --bucket-type=couchbase --storage-backend=magma --bucket-ramsize={{ item.ram }} --bucket-replica={{ item.replicas }} --bucket-eviction-policy={{ item.eviction }} -u {{ admin_user }} -p {{ admin_password }}
     with_items:
       - "{{ buckets }}"
