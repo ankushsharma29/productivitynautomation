@@ -1,3 +1,2 @@
 buckets: 
-- { "name": "default1", "ram":200, "replicas":2, "eviction": "fullEviction" }
-- { "name": "default2", "ram":200, "replicas":2, "eviction": "fullEviction" }
+- { "name": "default1", "ram":1024, "replicas":1, "eviction": "fullEviction" }
