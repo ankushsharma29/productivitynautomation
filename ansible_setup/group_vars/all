@@ -5,7 +5,7 @@ admin_password: password
 # Cluster settings
 cluster_name: cloud
 cluster_ram_quota: 1024
-data_path: /tmp/data
+data_path: /data
 index_path: /tmp/index
 certpath: /tmp/certificate
 
