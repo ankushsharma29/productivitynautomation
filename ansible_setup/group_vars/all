@@ -5,14 +5,14 @@ admin_password: password
 # Cluster settings
 cluster_name: cloud
 cluster_ram_quota: 1024
-data_path: /tmp/data
+data_path: /data
 index_path: /tmp/index
 certpath: /tmp/certificate
 
 # Build
 build_rel: cheshire-cat
-build_ver: 7.0.1
-build_num: 6102
+build_ver: 7.1.0
+build_num: 2534
 build_os: centos7
 build_arch: x86_64
 build_url: http://172.23.126.166/builds/latestbuilds/couchbase-server/{{ build_rel }}/{{ build_num }}/couchbase-server-enterprise-{{ build_ver }}-{{ build_num }}-{{ build_os }}.{{ build_arch }}.rpm
